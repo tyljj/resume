@@ -1,0 +1,168 @@
+%-------------------------
+% Resume in Latex
+% Author : Tyler Johnson
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+% ✅ BULLETS ONLY FOR PROJECTS & EXPERIENCE
+\newcommand{\resumeItemListStart}{\begin{itemize}[label={\tiny$\bullet$},leftmargin=0.3in]}
+
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Tyler Johnson} \\ \vspace{1pt}
+    \href{mailto:tylerjjohnson0502@gmail.com}{\underline{tylerjjohnson0502@gmail.com}} $|$
+    \href{https://linkedin.com/in/tyler-jjohnson}{\underline{linkedin.com/in/tyler-jjohnson}} $|$
+    \href{https://github.com/tyljj}{\underline{github.com/tyljj}}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Summary}
+\small{
+\textbf{Computer Engineering graduate} specializing in embedded firmware and hardware-integrated systems. Experience with STM32 and ESP32 platforms, real-time sensor interfaces, and low-level debugging using oscilloscopes and logic analyzers. Proven ability to deliver documented, reliable automation solutions in safety-critical environments.
+}
+
+
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {University of St. Thomas}{Saint Paul, MN}
+    {Bachelor of Computer Engineering}{Sep. 2021 -- May 2025}
+\resumeSubHeadingListEnd
+
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    \textbf{Languages}{: Java, Python, C, HTML/CSS, R, Verilog, Assembly} \\
+    \textbf{Software \& Tools}{: Keil µVision, Visual Studio, Git/GitLab, Postman, Vivado} \\
+    \textbf{Protocols}{: UART, SPI, I2C, Wi-Fi, Bluetooth} \\
+    \textbf{Hardware \& Debugging}{: Oscilloscopes, logic analyzers, DMMs, soldering, board-level troubleshooting}
+  }}
+\end{itemize}
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+    {\textbf{Robotic Arm FTIR Cleaning Automation} $|$ \emph{Python, Embedded Sensors}}{}
+  \resumeItemListStart
+    \resumeItem{Developed modular control software coordinating robotic motion, safety interlocks, and sensor feedback for a repeatable FTIR cleaning process.}
+    \resumeItem{Implemented multi-threaded logic using event flags to handle door sensors and break-beam safety systems.}
+    \resumeItem{Authored technical documentation covering system architecture, interfaces, and validation procedures.}
+  \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Gas-Detecting Autonomous Robot} $|$ \emph{STM32 Embedded Firmware}}{}
+  \resumeItemListStart
+    \resumeItem{Programmed embedded firmware for real-time gas sensing, navigation decisions, and control logic.}
+    \resumeItem{Debugged UART and I2C communication using oscilloscopes and logic analyzers.}
+    \resumeItem{Performed iterative validation to verify sensor accuracy, timing stability, and system behavior.}
+    \resumeItem{Structured firmware to support maintainability and repeatable testing.}
+  \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{IoT Temperature Monitoring System} $|$ \emph{Distributed Embedded System}}{}
+  \resumeItemListStart
+    \resumeItem{Designed a multi-node embedded system using STM32 and Raspberry Pi platforms.}
+    \resumeItem{Implemented structured data communication and logging for real-time monitoring.}
+    \resumeItem{Documented system architecture, interfaces, and validation results for team review.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+  {Papa Tronnio's Pizza}{Prescott, WI}
+  {Restaurant Manager}{January 2022 -- January 2025}
+  \resumeItemListStart
+    \resumeItem{Led daily operations while supervising staff in a fast-paced environment.}
+    \resumeItem{Maintained consistent processes, documentation, and quality standards.}
+    \resumeItem{Communicated clearly with customers, employees, and ownership to resolve issues.}
+    \resumeItem{Managed reporting, workflow organization, and accountability.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\end{document}
