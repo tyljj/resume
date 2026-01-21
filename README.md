@@ -1,5 +1,7 @@
 # Resume – Tyler Johnson
 
+📄 **[View Resume (PDF)](resume.pdf)**
+
 This repository contains the LaTeX source and compiled PDF of my professional resume.
 
 ## Files
